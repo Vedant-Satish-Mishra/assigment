@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        td{
+            font-weight: bolder;
+        }
+    </style>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div align="center">Registration Form</div>
+    <form>
+        <table border="1" bgcolor="#E8E8E8" align="center"  width="540" hight="678" >
+            <tr>
+                <td align="center">Enter your first <br>name</td>
+                <td><input type="text" name="first_name" placeholder="Enter your first name" required></td>
+            </tr>
+            <tr>
+                <td align="center">Enter your last <br>name</td>
+                <td><input type="text" name="last_name" placeholder="Enter your last name" required></td>
+            </tr>
+            <tr>
+                <td align="center">Enter your <br>password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td align="center">Reenter your <br>password</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td align="center">Enter your email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td align="center">Enter your mobile</td>
+                <td><input type="tel" name="mobile" required></td>
+            </tr>
+            <tr>
+                <td align="center">Enter your address</td>
+                <td><textarea name="address" rows="8" cols="40" required></textarea></td>
+            </tr>
+            <tr>
+                <td align="center">Select your gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female" required> Female
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Select your hobbies</td>
+                <td>
+                    <input type="checkbox" name="hobbies" value="hobby1"> Hobby1
+                    <input type="checkbox" name="hobbies" value="hobby2"> Hobby2
+                    <input type="checkbox" name="hobbies" value="hobby3"> Hobby3
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Select your DOB</td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td align="center">Select your country</td>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">Upload your pic</td>
+                <td><input type="file" name="picture" accept="image/*" required></td>
+            </tr>
+            <tr>
+                <td align="center">Select your DOM</td>
+                <td><input type="month" name="dob" required></td>
+            </tr>
+            <tr>
+                <td align="center">Select your DOB with Time</td>
+                <td><input type="datetime-local" name="dob" required></td>
+            </tr>
+            <tr>
+                <td align="center">Select your age</td>
+                <td><input type="number" name="dob" required min="1" max="100"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Save My Data" style="background-color:#ffffff ;" required>
+                    <input type="reset" value="Reset Data" style="background-color: #ffffff ;" required>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
